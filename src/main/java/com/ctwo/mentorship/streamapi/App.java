@@ -5,7 +5,7 @@ import java.util.List;
 
 public class App {
   public static void main(String[] args) {
-    System.out.println("Welcome to the Stream API Excercises");
+    System.out.println("Welcome to the Stream API Exercises");
     Catalog catalog = new Catalog();
     exerciseOne(catalog);
     exerciseTwo(catalog);
@@ -24,6 +24,7 @@ public class App {
    * Expected: [Death's End, Night Watch, The Dark Forest, The Three-Body Problem]
    */
   private static List<String> exerciseOne(Catalog catalog) {
+    System.out.println("First exercise.");
     return null;
   }
 
@@ -34,6 +35,7 @@ public class App {
    * Print b) and c) with orElse("none"), never with get().
    */
   private static List<String> exerciseTwo(Catalog catalog) {
+    System.out.println("Second exercise.");
     return null;
   }
 
@@ -43,6 +45,7 @@ public class App {
    * c) The book with the longest title. Use Comparator.comparingInt.  -> One Hundred Years of Solitude
    */
   private static List<String> exerciseThree(Catalog catalog) {
+    System.out.println("Third exercise.");
     return null;
   }
 
@@ -52,6 +55,7 @@ public class App {
    * c) Map<Integer, List<String>> book titles by authorId.
    */
   private static List<String> exerciseFour(Catalog catalog) {
+    System.out.println("Fourth exercise.");
     return null;
   }
 
@@ -61,6 +65,7 @@ public class App {
    * Hint: build the maps once, outside the loan stream.
    */
   private static List<String> exerciseFive(Catalog catalog) {
+    System.out.println("Fifth exercise.");
     return null;
   }
 
@@ -70,6 +75,7 @@ public class App {
    * Hint: group loans by memberId, then map each loan to its book's genre.
    */
   private static List<String> exerciseSix(Catalog catalog) {
+    System.out.println("Sixth exercise.");
     return null;
   }
 
@@ -80,6 +86,7 @@ public class App {
    * With today = 2025-11-10 every active loan is overdue except none; try 2025-10-30 too.
    */
   private static List<String> exerciseSeven(Catalog catalog) {
+    System.out.println("Seventh exercise.");
     return null;
   }
 
@@ -89,6 +96,7 @@ public class App {
    * Hint: stream the entrySet(), sort by Map.Entry.comparingByValue().reversed().
    */
   private static List<String> exerciseEight(Catalog catalog) {
+    System.out.println("Eighth exercise.");
     return null;
   }
 
@@ -98,6 +106,7 @@ public class App {
    *    then redo it with Collectors.joining(", ") and say which one you would keep.
    */
   private static List<String> exerciseNine(Catalog catalog) {
+    System.out.println("Ninth exercise.");
     return null;
   }
 
@@ -109,6 +118,7 @@ public class App {
    * Then: which books have never been borrowed? Use the loan bookIds as a Set and filter.
    */
   private static List<String> exerciseTen(Catalog catalog) {
+    System.out.println("Tenth exercise.");
     return null;
   }
 }
