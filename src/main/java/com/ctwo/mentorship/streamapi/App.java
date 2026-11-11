@@ -8,16 +8,16 @@ public class App {
     System.out.println("-----------------------------------------------------------");
     System.out.println("Welcome to the Stream API Exercises");
     Catalog catalog = Catalog.getInstance();
-    exerciseOne(catalog);
-    exerciseTwo(catalog);
-    exerciseThree(catalog);
-    exerciseFour(catalog);
-    exerciseFive(catalog);
-    exerciseSix(catalog);
-    exerciseSeven(catalog);
-    exerciseEight(catalog);
-    exerciseNine(catalog);
-    exerciseTen(catalog);
+    // exerciseOne(catalog);
+    // exerciseTwo(catalog);
+    // exerciseThree(catalog);
+    // exerciseFour(catalog);
+    // exerciseFive(catalog);
+    // exerciseSix(catalog);
+    // exerciseSeven(catalog);
+    // exerciseEight(catalog);
+    // exerciseNine(catalog);
+    // exerciseTen(catalog);
     System.out.println("-----------------------------------------------------------");
   }
 
