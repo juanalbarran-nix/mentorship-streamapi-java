@@ -5,8 +5,9 @@ import java.util.List;
 
 public class App {
   public static void main(String[] args) {
+    System.out.println("-----------------------------------------------------------");
     System.out.println("Welcome to the Stream API Exercises");
-    Catalog catalog = new Catalog();
+    Catalog catalog = Catalog.getInstance();
     exerciseOne(catalog);
     exerciseTwo(catalog);
     exerciseThree(catalog);
@@ -17,6 +18,7 @@ public class App {
     exerciseEight(catalog);
     exerciseNine(catalog);
     exerciseTen(catalog);
+    System.out.println("-----------------------------------------------------------");
   }
 
   /* Exercise One: filter, map, sorted, toList

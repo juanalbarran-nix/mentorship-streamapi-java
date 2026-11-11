@@ -5,12 +5,14 @@ import java.util.List;
 import java.util.Optional;
 
 public class Catalog {
+  private static final Catalog INSTANCE = new Catalog();
+
   private List<Book> books;
   private List<Author> authors;
   private List<Member> members;
   private List<Loan> loans;
 
-  public Catalog() {
+  private Catalog() {
     this.authors =
         List.of(
             new Author(1, "Ursula K. Le Guin", "US"),
@@ -62,5 +64,25 @@ public class Catalog {
             new Loan(1, 5, LocalDate.of(2025, 10, 1), Optional.of(LocalDate.of(2025, 10, 14))),
             new Loan(8, 5, LocalDate.of(2025, 10, 25), Optional.empty()),
             new Loan(2, 6, LocalDate.of(2025, 10, 28), Optional.empty()));
+  }
+
+  public static Catalog getInstance() {
+    return INSTANCE;
+  }
+
+  public List<Book> getBooks() {
+    return this.books;
+  }
+
+  public List<Author> getAuthors() {
+    return this.authors;
+  }
+
+  public List<Member> getMembers() {
+    return this.members;
+  }
+
+  public List<Loan> getLoans() {
+    return this.loans;
   }
 }
